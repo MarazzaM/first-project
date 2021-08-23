@@ -42,7 +42,7 @@ body {
 }
 
 a {
-  color: #444444;
+  color: #000;
 }
 
 ul {
@@ -62,7 +62,7 @@ section {
 .left-col .subhead {
   text-transform: uppercase;
   font-weight: bold;
-  color: gray;
+  color: #2950ff;
   letter-spacing: .3em;
 }
 
@@ -136,6 +136,11 @@ ul.features-list li:before {
 .recomendaciones-section {
   background: var(--primary-color);
   color: white;
+}
+
+.recomendaciones-section h1 {
+  text-align: center;
+  padding-bottom: 3em;
 }
 
 .recomendaciones-section li {
@@ -233,6 +238,13 @@ nav li a:hover {
 }
 
 @media only screen and (min-width: 768px) {
+  a {
+    color: #ffffff;
+  }
+  .hero {
+    background-image: url(../images/abstract-background-279.jpg);
+    background-size: cover;
+  }
   .mobile-menu, .mobile-menu-exit {
     display: none;
   }
@@ -263,7 +275,7 @@ nav li a:hover {
     display: -ms-flexbox;
     display: flex;
   }
-  .navbar nav a {
+  .navbar nav ul a {
     color: black;
     font-size: 1em;
     padding: .1em 1em;
@@ -312,7 +324,7 @@ nav li a:hover {
     width: 90%;
   }
   .hero-img {
-    width: 30%;
+    width: 45%;
     margin-right: 8em;
   }
   .hero-cta {
@@ -373,6 +385,10 @@ nav li a:hover {
 }
 
 @media only screen and (min-width: 1450px) {
+  .hero {
+    background-image: url(../images/abstract-background-279.jpg);
+    background-size: cover;
+  }
   .features-section:before {
     content: '';
     position: absolute;

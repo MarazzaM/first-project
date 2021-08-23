@@ -41,7 +41,7 @@ body {
 }
 
 a {
-    color: #444444;
+    color: #000;
 }
 
 ul {
@@ -63,7 +63,7 @@ section {
     .subhead {
         text-transform: uppercase;
         font-weight: bold;
-        color: gray;
+        color: rgb(41, 80, 255);
         letter-spacing: .3em;
     }
 
@@ -137,6 +137,10 @@ ul.features-list {
     background: var(--primary-color);
     color: white;
 
+    h1{
+        text-align: center;
+        padding-bottom: 3em;
+    }
     li {
         background: #006BD6;
         text-align: center;
@@ -236,6 +240,13 @@ nav {
 }
 
 @media only screen and (min-width: 768px) {
+    a {
+        color: #ffffff;
+    }
+    .hero{
+        background-image: url(../images/abstract-background-279.jpg);
+        background-size: cover;
+    }
 
     .mobile-menu, .mobile-menu-exit {
         display: none;
@@ -258,13 +269,14 @@ nav {
 
         ul {
             display: flex;
+            a {
+                color: black;
+                font-size: 1em;
+                padding: .1em 1em;
+            }
+    
         }
 
-        a {
-            color: black;
-            font-size: 1em;
-            padding: .1em 1em;
-        }
 
         ul.primary-nav {
             margin: 0;
@@ -289,11 +301,11 @@ nav {
 }
 
 @media only screen and (min-width: 1080px) {
+
     .container {
         width: 1080px;
         margin: 0 auto;
     }
-
     section {
         padding: 10em 4em;
     }
@@ -314,7 +326,7 @@ nav {
     }
 
     .hero-img {
-        width: 30%;
+        width: 45%;
         margin-right: 8em;
     }
 
@@ -358,7 +370,6 @@ nav {
             margin: 0 1em;
         }
     }
-
     .contact-section {
         position: relative;
 
@@ -381,6 +392,10 @@ nav {
 }
 
 @media only screen and (min-width: 1450px) {
+    .hero{
+        background-image: url(../images/abstract-background-279.jpg);
+        background-size: cover;
+    }
     .features-section {
 
         &:before {
