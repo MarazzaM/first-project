@@ -2,53 +2,131 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda</title>
-    <link rel="stylesheet" href="CSS/main.css">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <title>Tienda online</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <header class="navbar">
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="#">Zapatilla<span>Net</span></a>
 
-        <div class="logo">
-            <a href="#">Ta<span class="logo-sub">´kabrom</span></a>
+            <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
+
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
+                
+                <ul class="primary-nav">
+                    <li class="current"><a href="#">Inicio</a></li>
+                    <li><a href="#">Catálogo</a></li>
+                    <li><a href="#">Redes sociales</a></li>
+                </ul>
+
+                <ul class="secondary-nav">
+                    <li><a href="#">Linktree</a></li>
+                    <li class="contactanos-cta"><a href="#">Contáctanos</a></li>
+                </ul>
+            </nav>
         </div>
-        <img src="/TIENDA/img/menu.svg" alt="open btn" id="mobile-cta" class="mobile-menu">
+    </div>
 
-        <div>
-            <img src="/TIENDA/img/exit.svg" alt="close btn" id="mobile-exit" class="mobile-menu-exit">
-            <ul class="primary-nav">
-                <li class="nav-items"><a href="#"> About Me</li>
-                <li class="nav-items"><a href="#"> Contáctame</a></li>
-                <li class="nav-items"><a href="#"> Portafolio</a></li>
-            </ul>
+    <section class="hero">
+        <div class="container">
+            <div class="left-col">
+                <p class="subhead">Calzado urbano</p>
+                <h1>Que te lleva a todas partes</h1>
 
-            <ul class="secondary-nav">
-                <li><a href="#"></a><span><i class="uil uil-whatsapp"></i> </span></a></li>
-                <li><a href="#"></a><span><i class="uil uil-instagram"></i></span></a></li>
-                <li class="btn-nav"><a href="#">Consultar!</a></li>
-            </ul>
-        </div>
-    </header>
-
-
-        <section class="hero">
-            <div class="container">
-                <div class="left-col">
-                    <p class="sub-head">El arte es bonito</p>
-                    <h1>Esta bueno escribir</h1>
-                    
-                    <div class="hero-cta">
-                        <a href="#" class="primary-cta">Intentalo!</a>
-                        <a href="#" class="secondary-cta">
-                            <img src="/TIENDA/img/watch.svg" alt="watch">Miranos!
-                        </a>
-                    </div>
+                <div class="hero-cta">
+                    <a href="#" class="primary-cta">Contáctanos</a>
+                    <a href="#" class="watch-video-cta">
+                        <img src="images/watch.svg" alt="Watch a video">Mirá nuestras zapas
+                    </a>
                 </div>
-                <img src="/TIENDA/img/carpincho-mascotajpg.jpg" alt="carpincho">
             </div>
-        </section>    
+
+            <img src="images/carpincho-mascotajpg.jpg" class="hero-img" alt="Illustration">
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <ul class="features-list">
+                <li>Las mejores zapas</li>
+                <li>Al mejor precio</li>
+                <li>No te olvides de pedir las tuyas!</li>
+                <li>Envíos a todo el país</li>
+                <li>No te olvides de llevar tu llama!</li>
+                <li>También tenemos indumentaria</li>
+            </ul>
+
+            <img src="images/ZAPATILLANET - Logo - PNG.png" alt="logo">
+        </div>
+    </section>
+
+    <section class="recomendaciones-section">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="images/person.jpg" alt="Person">
+
+                    <blockquote>"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore"</blockquote>
+                    <cite>- Jane Doe</cite>
+                </li>
+                <li>
+                    <img src="images/person.jpg" alt="Person">
+
+                    <blockquote>"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore"</blockquote>
+                    <cite>- Jane Doe</cite>
+                </li>
+                <li>
+                    <img src="images/person.jpg" alt="Person">
+
+                    <blockquote>"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore"</blockquote>
+                    <cite>- Jane Doe</cite>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-left">
+                <h2>Contactarse</h2>
+
+                <form action="">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" name="name">
+
+                    <label for="message">Mensaje</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+                    <input type="submit" class="send-message-cta" value="Send message">
+                </form>
+            </div>
+            <div class="contact-right">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210146.68169344644!2d-58.573384821620394!3d-34.615743687152445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1629683010870!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+
+        const mobileBtn = document.getElementById('mobile-cta')
+              nav = document.querySelector('nav')
+              mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+
+
+
+    </script>
 
 </body>
 </html>
