@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
+@import "../bootstrap/bootstrap-5.0.2/scss/bootstrap.scss";
+
+
 :root {
     --primary-color: #007AF3;
     --secondary-color: #E50505;
@@ -418,4 +421,9 @@ nav {
             top: 2em;
         }
     }
+}
+.carrusel{
+    width: 100%;
+    height: 50%;
+    margin:auto;
 }
